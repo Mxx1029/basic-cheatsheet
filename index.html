@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mxx's cheatsheet</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./resources/css/styles.css" style="text/css">
+</head>
+<body>
+    <main>
+        <!-- next things to put in:
+            - table attributes scope
+            - attributes for <link>
+            - attributes for <a>
+        -->
+        <h1>References HTML and CSS</h1>
+        <h2>HTML Property Lists</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">Tag</th>
+                    <th scope="col">List of properties</th>
+                    <th scope="col">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="tag">&lt;link&gt;</span></td>
+                    <td><span class="tag">&lt;link src="./ressources/css/style.css" type="text/css" rel="stylesheet"&gt;</span></td>
+                    <td>to link CSS stylesheet to <span class="tag">&lt;head&gt;</span></td>
+                </tr>
+                <tr>
+                    <td><span class="tag">&lt;a&gt;</span></td>
+                    <td><span class="tag">&lt;a href="url" target="_blank" rel="noreferrer noopener"&gt;</span>Link title<span class="tag">&lt;/a&gt;</span></td>
+                    <td>to open links in new window and reduce performance issues</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>CSS Selector and Combinator Reference</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">Example</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="tag">* {  }</span></td>
+                    <td>Universal selector</td>
+                    <td>Defines universal CSS rules for web page.</td>
+                </tr>
+                <tr>
+                    <td><span class="tag">h1 {  }</span></td>
+                    <td>Type selector</td>
+                    <td>Selects a HTML element.</td>
+                </tr>
+                <tr>
+                    <td><span class="tag">.box {  }</span></td>
+                    <td>Class selector</td>
+                    <td>Selects HTML elements that been given a class.</td>
+                </tr>
+                <tr>
+                    <td><span class="tag">#unique {  }</span></td>
+                    <td>ID selector</td>
+                    <td>Selects the HTML element that has been given an unique id.</td>
+                </tr>
+                <tr>
+                    <td><span class="tag">article p {  }</span></td>
+                    <td>Descendant combinator</td>
+                    <td>Selects all <span class="tag">&lt;p&gt;</span> elements that are nested in <span class="tag">&lt;article&gt;</span> elements.</td>
+                </tr>
+                <tr>
+                    <td><span class="tag">article > p {  }</span></td>
+                    <td>Child combinator</td>
+                    <td>Selects only the <span class="tag">&lt;p&gt;</span> elements that are direct children of <span class="tag">&lt;article&gt;</span> elements.</td>
+                </tr>
+                <tr>
+                    <td><span class="tag">h1 + p {  }</span></td>
+                    <td>Adjacent sibling combinator</td>
+                    <td>Selects only the next <span class="tag">&lt;p&gt;</span> element as the first sibling after a <span class="tag">&lt;h1&gt;</span> element.</td>
+                </tr>
+                <tr>
+                        <td><span class="tag">h1 ~ p {  }</span></td>
+                    <td>General sibling combinator</td>
+                    <td>Selects all <span class="tag">&lt;p&gt;</span> elements that are siblings after the <span class="tag">&lt;h1&gt;</span> element.</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>HTML Table Reference</h2>
+        <h3 class="combine">Table Tags</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">Tag</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="tag">&lt;table&gt;</span></td>
+                    <td>Table</td>
+                    <td>The wrapper element for all HTML tables.</td>
+                </tr>
+                <tr>
+                    <td><span class="tag">&lt;thead&gt;</span></td>
+                    <td>Table Head</td>
+                    <td>The set of rows defining the column headers in a table.</td>
+                </tr>
+                <tr>
+                    <td><span class="tag">&lt;tbody&gt;</span></td>
+                    <td>Table Body</td>
+                    <td>The set of rows containing the actual table data.</td>
+                </tr>
+                <tr>
+                    <td><span class="tag">&lt;tr&gt;</span></td>
+                    <td>Table Row</td>
+                    <td>The table row container.</td>
+                </tr>
+                <tr>
+                    <td><span class="tag">&lt;td&gt;</span></td>
+                    <td>Table Data</td>
+                    <td>The table cell container.</td>
+                </tr>
+                <tr>
+                    <td><span class="tag">&lt;tfoot&gt;</span></td>
+                    <td>Table Foot</td>
+                    <td>The set of rows defining the footer in a table.</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3 class="combine">Table Attributes</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">Attribute</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="tag">colspan</span></td>
+                    <td>Column Span</td>
+                    <td>Defines how many columns a <span class="tag">&lt;td&gt;</span> element should span.</td>
+                </tr>
+                <tr>
+                    <td><span class="tag">rowspan</span></td>
+                    <td>Row Span</td>
+                    <td>Defines how many rows a <span class="tag">&lt;td&gt;</span> element should span.</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>

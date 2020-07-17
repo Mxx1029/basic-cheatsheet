@@ -1,0 +1,40 @@
+body    {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    background-color: lightcyan;
+}
+
+h1  {
+    text-shadow: 1px 1px 4px lightslategray;
+}
+
+h2  {
+    color: mediumorchid;
+    text-shadow: 1px 1px 2px palevioletred;
+}
+
+h3  {
+    color: rebeccapurple;
+}
+
+table   {
+    border: 2px solid slateblue;
+    margin: auto;
+    width: 900px;
+    text-align: left;
+}
+
+th    {
+    background-color: plum;
+    padding: 0.25em;
+}
+
+td  {
+    border-top: 1px solid slateblue;
+    padding: 0.25em;
+}
+
+.tag    {
+    background-color: lemonchiffon;
+    font-family: monospace;
+}
