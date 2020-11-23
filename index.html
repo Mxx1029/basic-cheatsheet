@@ -10,7 +10,7 @@
 <body>
     <main>
         <h1>References HTML and CSS</h1>
-        <h2>HTML Property Lists</h2>
+        <h2>Useful HTML attributes</h2>
         <table>
             <thead>
                 <tr>
@@ -37,7 +37,7 @@
                 </tr>
             </tbody>
         </table>
-        <h2>CSS Selector and Combinator Reference</h2>
+        <h2>CSS Selectors</h2>
         <table>
             <thead>
                 <tr>
@@ -50,42 +50,47 @@
                 <tr>
                     <td><span class="tag">* {  }</span></td>
                     <td>Universal selector</td>
-                    <td>Defines universal CSS rules for web page.</td>
+                    <td>applies to all elements in the document.</td>
                 </tr>
                 <tr>
                     <td><span class="tag">h1 {  }</span></td>
                     <td>Type selector</td>
-                    <td>Selects a HTML element.</td>
+                    <td>matches element names</td>
                 </tr>
                 <tr>
                     <td><span class="tag">.box {  }</span></td>
                     <td>Class selector</td>
-                    <td>Selects HTML elements that been given a class.</td>
+                    <td>targets any elements whose class attribute has a value of box</td>
+                </tr>
+                <tr>
+                    <td><span class="tag">p.box {  }</span></td>
+                    <td>Class selector (chaining?)</td>
+                    <td>targets only <span class="tag">&lt;p&gt;</span> elements whose class attribute have a value of note</td>
                 </tr>
                 <tr>
                     <td><span class="tag">#unique {  }</span></td>
                     <td>ID selector</td>
-                    <td>Selects the HTML element that has been given an unique id.</td>
+                    <td>matches the one element whose id attribute has the value of unique</td>
                 </tr>
                 <tr>
-                    <td><span class="tag">article p {  }</span></td>
-                    <td>Descendant combinator</td>
-                    <td>Selects all <span class="tag">&lt;p&gt;</span> elements that are nested in <span class="tag">&lt;article&gt;</span> elements.</td>
+                    <td><span class="tag">li>a {  }</span></td>
+                    <td>Child selector</td>
+                    <td>targets any <span class="tag">&lt;a&gt;</span> elements that are direct children of an <span class="tag">&lt;li&gt;</span> element, but no other <span class="tag">&lt;a&gt;</span> elements on the page</td>
                 </tr>
                 <tr>
-                    <td><span class="tag">article > p {  }</span></td>
-                    <td>Child combinator</td>
-                    <td>Selects only the <span class="tag">&lt;p&gt;</span> elements that are direct children of <span class="tag">&lt;article&gt;</span> elements.</td>
+                    <td><span class="tag">p a {  }</span></td>
+                    <td>Descendant selector</td>
+                    <td>targets any <span class="tag">&lt;a&gt;</span> elements that sit inside a <span class="tag">&lt;p&gt;</span> element, even if there are other elements nested between them</td>
                 </tr>
                 <tr>
-                    <td><span class="tag">h1 + p {  }</span></td>
-                    <td>Adjacent sibling combinator</td>
-                    <td>Selects only the next <span class="tag">&lt;p&gt;</span> element as the first sibling after a <span class="tag">&lt;h1&gt;</span> element.</td>
+                    <td><span class="tag">h1+p {  }</span></td>
+                    <td>Adjacent sibling selector (only supported from IE 7 on</td>
+                    <td>targets the <em>first</em> <span class="tag">&lt;p&gt;</span> element after any <span class="tag">&lt;h1&gt;</span> element, but no other <span class="tag">&lt;p&gt;</span> elements</td>
                 </tr>
                 <tr>
-                        <td><span class="tag">h1 ~ p {  }</span></td>
-                    <td>General sibling combinator</td>
-                    <td>Selects all <span class="tag">&lt;p&gt;</span> elements that are siblings after the <span class="tag">&lt;h1&gt;</span> element.</td>
+                    <td><span class="tag">h1~p {  }</span></td>
+                    <td>General sibling selector (only supported from IE 7 on)</td>
+                    <td>targets all <span class="tag">&lt;p&gt;</span> elements after any <span class="tag">&lt;h1&gt;</span> element</td>
                 </tr>
             </tbody>
         </table>
