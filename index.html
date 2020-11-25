@@ -42,7 +42,7 @@
                 </tr>
             </tbody>
         </table>
-        <h2>CSS Selectors</h2>
+        <h2>CSS Selectors and Attribute Selectors</h2>
         <table>
             <thead>
                 <tr>
@@ -96,6 +96,36 @@
                     <td><span class="tag">h1~p {  }</span></td>
                     <td>General sibling selector (only supported from IE 7 on)</td>
                     <td>targets all <span class="tag">&lt;p&gt;</span> elements after any <span class="tag">&lt;h1&gt;</span> element</td>
+                </tr>
+                <tr>
+                    <td><span class="tag">p[class] {  }</span></td>
+                    <td>Existence selector [ ]</td>
+                    <td>targets any <span class="tag">&lt;p&gt;</span> element with an attribute called <span class="tag">class</span>, whatever its value</td>
+                </tr>
+                <tr>
+                    <td><span class="tag">p[class="dog"] {  }</span></td>
+                    <td>Equality Selector [=]</td>
+                    <td>targets any <span class="tag">&lt;p&gt;</span> element with an attribute called <span class="tag">class</span> whose value is <span class="tag"></span>dog</span></td>
+                </tr>
+                <tr>
+                    <td><span class="tag">p[class~="dog"] {  }</span></td>
+                    <td>Space Selector [~=]</td>
+                    <td>targets any <span class="tag">&lt;p&gt;</span> element with an attribute called <span class="tag">class</span> whose value is a list of space-seperated words, one of which is <span class="tag"></span>dog</span></td>
+                </tr>
+                <tr>
+                    <td><span class="tag">p[attr^"d"] {  }</span></td>
+                    <td>Prefix Selector [^=]</td>
+                    <td>targets any <span class="tag">&lt;p&gt;</span> element with an attribute whose value begins with the letter "d"</td>
+                </tr>
+                <tr>
+                    <td><span class="tag">p[attr*"do"] {  }</span></td>
+                    <td>Substring Selector [=]</td>
+                    <td>targets any <span class="tag">&lt;p&gt;</span> element with an attribute whose value contains the letters "do"</td>
+                </tr>
+                <tr>
+                    <td><span class="tag">p[attr$"g"] {  }</span></td>
+                    <td>Suffix Selector [=]</td>
+                    <td>targets any <span class="tag">&lt;p&gt;</span> element with an attribute whose value ends with the letter "g"</td>
                 </tr>
             </tbody>
         </table>
