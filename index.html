@@ -42,7 +42,7 @@
                 </tr>
             </tbody>
         </table>
-        <h2>CSS Selectors and Attribute Selectors</h2>
+        <h2>CSS Selectors, Attribute Selectors and Pseudo-elements/-classes</h2>
         <table>
             <thead>
                 <tr>
@@ -69,7 +69,7 @@
                 </tr>
                 <tr>
                     <td><span class="tag">p.box {  }</span></td>
-                    <td>Class selector (chaining?)</td>
+                    <td>Chaining</td>
                     <td>targets only <span class="tag">&lt;p&gt;</span> elements whose class attribute have a value of note</td>
                 </tr>
                 <tr>
@@ -126,6 +126,41 @@
                     <td><span class="tag">p[attr$"g"] {  }</span></td>
                     <td>Suffix Selector [=]</td>
                     <td>targets any <span class="tag">&lt;p&gt;</span> element with an attribute whose value ends with the letter "g"</td>
+                </tr>
+                <tr>
+                    <td><span class="tag">p.intro:first-letter {  }</span></td>
+                    <td>Pseudo-element</td>
+                    <td>acts like there is an extra element that can be addressed, in this case allows to style the first letter</td>
+                </tr>
+                <tr>
+                    <td><span class="tag">p.intro:first-line {  }</span></td>
+                    <td>Pseudo-element</td>
+                    <td>as before, in this case allows to style the first line of text</td>
+                </tr>
+                <tr>
+                    <td><span class="tag">a:link {  }</span></td>
+                    <td>Pseudo-class</td>
+                    <td>use the following 5 states in this order for links. This case allows styling for a link that has not been visited yet</td>
+                </tr>
+                <tr>
+                    <td><span class="tag">a:visited {  }</span></td>
+                    <td>Pseudo-class</td>
+                    <td>allows styling for a link that has been visited</td>
+                </tr>
+                <tr>
+                    <td><span class="tag">a:hover {  }</span></td>
+                    <td>Pseudo-class</td>
+                    <td>allows styling for when the user hovers over a link</td>
+                </tr>
+                <tr>
+                    <td><span class="tag">a:active {  }</span></td>
+                    <td>Pseudo-class</td>
+                    <td>allows styling for when an element is activated by the user (link is being clicked, or a button being pressed)</td>
+                </tr>
+                <tr>
+                    <td><span class="tag">a:focus {  }</span></td>
+                    <td>Pseudo-class</td>
+                    <td>allows styling for when the browser discoveres the user is ready to interact with an element (e.g. when the tab key is used to navigate through the interactive items on a page)</td>
                 </tr>
             </tbody>
         </table>
